@@ -1,0 +1,61 @@
+
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dll
+*.lib
+*.sbr
+
+
+
+# Created by https://www.gitignore.io/api/cvs
+
+### CVS ###
+/CVS/*
+*/CVS/*
+.cvsignore
+*/.cvsignore
+
+# Sass #
+###########
+*.sass-cache*
+
+.vs
+
+# Created by https://www.gitignore.io/api/visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/spellright.dict
+
+# End of https://www.gitignore.io/api/visualstudiocode
+
+
+**/DeploymentSecrets/*
+**/git-untracked/*
+**/*-git-untracked*
+**/*.git-untracked*
+**/nogit/*
+**/*-nogit*
+**/*.nogit*
