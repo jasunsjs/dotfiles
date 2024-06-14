@@ -1,6 +1,6 @@
 mkdir -p /home/vscode/.local/bin
 
-DIFFT_VERSION="0.55.0"
+DIFFT_VERSION="0.58.0"
 if [ ! -f ~/.local/bin/difft ]; then
   echo "installing difftastic ${DIFFT_VERSION}"
   curl -Lo /tmp/difft.tar.gz https://github.com/Wilfred/difftastic/releases/download/${DIFFT_VERSION}/difft-x86_64-unknown-linux-gnu.tar.gz
