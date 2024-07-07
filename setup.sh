@@ -9,7 +9,18 @@ fi
 
 curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 
-echo 'eval "$(oh-my-posh --init --shell bash --config ~/.vityusha-ohmyposhv3-v2.json)"' >> ~/.bashrc
+# Ensure everyone can use docker if available
+if [ -S /var/run/docker.sock ]; then
+  echo "Changing /var/run/docker.sock permissions"
+  sudo chmod 666 /var/run/docker.sock
+else
+  echo "/var/run/docker.sock not available"
+fi
+
+# Allow act
+curl https://raw.githubusercontent.com/nektos/act/master/install.sh | BINDIR=~/.local/bin bash
+
+echo 'eval "$(oh-my-posh --init --shell bash --config ~/.vityusha-ohmyposhv3-v2.json)"' >>~/.bashrc
 
 # Fonts
 mkdir -p ~/.local/share/fonts
@@ -19,6 +30,7 @@ rm /tmp/Meslo.zip
 
 mkdir -p ~/.config/Code/User
 ln -sfv $PWD/settings.json ~/.config/Code/User/settings.json
+ln -sfv $PWD/.actrc ~/.actrc
 ln -sfv $PWD/.gitconfig ~/.gitconfig
 ln -sfv $PWD/.vityusha-ohmyposhv3-v2.json ~/.vityusha-ohmyposhv3-v2.json
 ln -sfv $PWD/difftool.sh ~/difftool.sh
