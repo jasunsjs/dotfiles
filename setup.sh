@@ -36,3 +36,7 @@ ln -sfv $PWD/.vityusha-ohmyposhv3-v2.json ~/.vityusha-ohmyposhv3-v2.json
 ln -sfv $PWD/difftool.sh ~/difftool.sh
 ln -sfv $PWD/gitconflict.sh ~/gitconflict.sh
 ln -sfv $PWD/gitignore_global.txt ~/gitignore_global.txt
+
+# dotnet tools
+dotnet tool install dotnet-outdated-tool --global --ignore-failed-sources
+dotnet tool install dotnet-ef --global --ignore-failed-sources
