@@ -29,7 +29,7 @@ unzip /tmp/Meslo.zip -d ~/.local/share/fonts
 rm /tmp/Meslo.zip
 
 mkdir -p ~/.config/Code/User
-ln -sfv $PWD/settings.json ~/.config/Code/User/settings.json
+ln -sfv $PWD/settings.json ~/.vscode-remote/data/Machine/settings.json
 ln -sfv $PWD/.actrc ~/.actrc
 ln -sfv $PWD/.gitconfig ~/.gitconfig
 ln -sfv $PWD/.vityusha-ohmyposhv3-v2.json ~/.vityusha-ohmyposhv3-v2.json
