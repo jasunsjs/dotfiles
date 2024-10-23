@@ -40,3 +40,6 @@ ln -sfv $PWD/gitignore_global.txt ~/gitignore_global.txt
 # dotnet tools
 dotnet tool install dotnet-outdated-tool --global --ignore-failed-sources
 dotnet tool install dotnet-ef --global --ignore-failed-sources
+
+# yarn tools
+yarn global add npm-check-updates
