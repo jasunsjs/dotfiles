@@ -30,7 +30,7 @@
   excludesfile = ~/gitignore_global.txt
 
 [diff]
-  tool = bc3
+  #tool = bc3
   #external = difft
 [difftool]
   prompt = false
