@@ -44,13 +44,14 @@ ln -sfv $dotFilesDir/.gitconfig ~/.gitconfig
 ln -sfv $dotFilesDir/.vityusha-ohmyposhv3-v2.json ~/.vityusha-ohmyposhv3-v2.json
 ln -sfv $dotFilesDir/difftool.sh ~/difftool.sh
 ln -sfv $dotFilesDir/gitconflict.sh ~/gitconflict.sh
-ln -sfv $dotFilesDir/gitignore_global.txt ~/gitignore_global.txt
+mkdir -p ~/.config/git
+ln -sfv $dotFilesDir/.config/git/ignore ~/.config/git/ignore
 
 # dotnet tools
-dotnet tool install dotnet-outdated-tool --global --ignore-failed-sources
-dotnet tool install dotnet-ef --global --ignore-failed-sources
+#dotnet tool install dotnet-outdated-tool --global --ignore-failed-sources
+#dotnet tool install dotnet-ef --global --ignore-failed-sources
 
-if command -v yarn >/dev/null 2>&1; then
+if command -v node >/dev/null 2>&1 && command -v yarn >/dev/null 2>&1; then
   # yarn tools
   yarn global add npm-check-updates
 fi
