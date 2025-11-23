@@ -27,7 +27,6 @@
   editor = nano
   filemode = false
   autocrlf = false
-  excludesfile = ~/gitignore_global.txt
 
 [diff]
   #tool = bc3
