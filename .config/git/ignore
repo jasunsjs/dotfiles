@@ -59,3 +59,10 @@ Thumbs.db
 **/nogit/*
 **/*-nogit*
 **/*.nogit*
+**/no-git/*
+**/*-no-git*
+**/*.no-git*
+
+.vars
+.secrets
+.store
