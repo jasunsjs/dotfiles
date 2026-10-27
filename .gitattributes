@@ -1,0 +1,3 @@
+# Store and check out every text file with LF line endings, whatever wrote it.
+# CRLF breaks setup.sh on Linux.
+* text=auto eol=lf
