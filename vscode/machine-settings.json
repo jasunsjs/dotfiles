@@ -1,5 +1,4 @@
 {
-  "editor.fontFamily": "D2Coding ligature",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
