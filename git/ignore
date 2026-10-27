@@ -1,0 +1,40 @@
+# Global gitignore: applies to every repo on this machine.
+# Project build outputs belong in each project's own .gitignore.
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Visual Studio
+.vs
+*.suo
+*.user
+
+# VS Code: ignore local state, keep shareable config
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/spellright.dict
+
+# Never-commit naming conventions
+**/DeploymentSecrets/*
+**/git-untracked/*
+**/*-git-untracked*
+**/*.git-untracked*
+**/nogit/*
+**/*-nogit*
+**/*.nogit*
+**/no-git/*
+**/*-no-git*
+**/*.no-git*
+
+# act (local GitHub Actions) secrets
+.vars
+.secrets
+.store
+
+# Claude Code local settings
+**/.claude/settings.local.json

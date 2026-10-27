@@ -1,0 +1,38 @@
+[user]
+	name = Jason Sun
+	email = jasonsunjishen@gmail.com
+
+[alias]
+	glog = log --all --pretty='format:%d %Cgreen%h%Creset %ci %an - %s' --graph
+	gloga = log --all --pretty='format:%d %Cgreen%h%Creset %ai %an - %s' --graph
+	changelog = log --oneline --pretty='format:- %s'
+	st = status
+	ci = commit
+	cia = commit -a --amend --no-edit
+	br = branch
+	co = checkout
+	com = !git show-ref --verify --quiet refs/heads/master && git switch master || git switch main
+	lg = log -p
+	d = difftool --tool=difftastic
+
+[core]
+	editor = nano
+	autocrlf = false
+
+[diff]
+	tool = vscode
+
+[difftool]
+	prompt = false
+
+[difftool "vscode"]
+	cmd = code --wait --diff \"$LOCAL\" \"$REMOTE\"
+
+[difftool "difftastic"]
+	cmd = difft \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+	tool = vscode
+
+[mergetool "vscode"]
+	cmd = code --wait --merge \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\"
