@@ -1,6 +1,4 @@
 # dotfiles
-non-negotiable cuz i need my configs.
-
 My git and terminal setup for Windows (PowerShell 7, Windows Terminal, oh-my-posh) and Linux (dev containers, Codespaces).
 
 ## What's here
